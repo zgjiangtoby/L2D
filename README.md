@@ -29,8 +29,23 @@ pip install -e .
 3. run ``./run_l2d.sh``
 
 
-## Inference time
 
+
+
+
+## Compute-accuracy trade-off:
+
+We test the average inference GPU-hours of each method on seven datasets, **L2D 0.96 < MDL 1.06 < ConE 1.14**. The accuracy improvements of L2D are larger on ambiguous tasks (e.g., **+5.39% SST-5, +4.87% MNLI, +4.4% Subj**).
+
+| Method | AgNews | CR | SST-2 | SST-5 | Subj | MNLI | QNLI | Infer Time |
+|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| MDL | 77.83(↑0.37) | 94.41(↑0.27) | 96.05(↑0.44) | 50.05(↑4.25) | 92.35(↑2.80) | 79.90(↑3.58) | 82.76(↑2.69) | 1.06(+0.10) |
+| ConE | 80.95(↓2.75) | 93.88(↑0.80) | 95.61(↑0.88) | 48.91(**↑5.39**) | 90.75(↑4.40) | 78.61(↑4.87) | 84.26(↑1.19) | 1.14(**+0.18**) |
+| L2D | 78.20(↑0) | 94.68(↑0) | 96.49(↑0) | 54.30(↑0) | 95.15(↑0) | 83.48(↑0) | 85.45(↑0) | 0.96(+0.00) |
+
+Note: "↑" and "+" denote the accuracy improvements and the extra GPU-Hours respectively, compared with L2D. **Bold** indicate the largest gain.
+
+### Inference time
 | Dataset | L2D | ConE | MDL |
 |:---------|----:|----:|----:|
 | ag_news | 2041 | 2060 | 2477 |
@@ -45,17 +60,10 @@ pip install -e .
 
 Note: GPU-Hours are calculated based on two NVIDIA RTX-4090 GPUs, i.e., 1734/360 * 2 = 0.96.
 
-## Compute-accuracy trade-off:
 
-|Method| AgNews | CR | SST-2 | SST-5 | Subj | MNLI | QNLI | Infer Time |
-|:---------|----:|----:|----:|----:|----:|----:|----:| ----:|
-|MDL| 77.83 |94.41 |96.05 | 50.05 | 92.35 | 79.90 | 82.76 | 1.06 (+0.1) |
-|ConE| 80.95 | 93.88 | 95.61 | 48.91 | 90.75 | 78.61 |84.26 | 1.14 (**+0.18**) |
-|L2D| 78.20 ($\uparrow$ 0) | 94.68 ($\uparrow$ 0) | 96.49 ($\uparrow$ 0) | 54.30 ($\uparrow$ 0) | 95.15 ($\uparrow$ 0) | 83.48 ($\uparrow$ 0) | 85.45 ($\uparrow$ 0) | **0.96**(+0) |
+### Pre-trained Language Models size
 
-## Pre-trained Language Models size
-
-| Model                     | Backbone #Params(M) |
+| Model                     | #Params (M) |
 |----------------------------|--------------------|
 | BERT-base-uncased          | 86                 |
 | RoBERTa-base               | 86                 |
