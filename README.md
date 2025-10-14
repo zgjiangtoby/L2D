@@ -58,7 +58,7 @@ Note: "↑" and "+" denote the accuracy improvements and the extra GPU-Hours res
 | **AVG (seconds)** | **1734** | **2050.14** | **1920.57** |
 | **GPU-Hours** | **0.96** | **1.14** | **1.06** |
 
-Note: GPU-Hours are calculated based on two NVIDIA RTX-4090 GPUs, i.e., 1734/360 * 2 = 0.96.
+Note: GPU-Hours are calculated based on two NVIDIA RTX-4090 GPUs, i.e., 1734/3600 * 2 = 0.96.
 
 
 ### Small Language Models size <sup>[1]</sup>
