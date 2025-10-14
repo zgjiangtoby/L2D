@@ -42,3 +42,19 @@ pip install -e .
 | subj | 380 | 488 | 549 |
 | **AVG (seconds)** | **1734** | **2050.14** | **1920.57** |
 | **2 GPU** | **0.96** | **1.14** | **1.06** |
+
+
+## Pre-trained Language Models size
+
+| Model                     | Backbone #Params(M) |
+|----------------------------|--------------------|
+| BERT-base-uncased          | 86                 |
+| RoBERTa-base               | 86                 |
+| DeBERTa-v3-base            | 86                 |
+- Base models:12 layers,768 hidden size,12 heads
+- M denotes for millions parameters
+### Reference
+He, P., Gao, J., & Chen, W. DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing. In The Eleventh International Conference on Learning Representations. 2023
+
+
+
