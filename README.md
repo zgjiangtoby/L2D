@@ -61,7 +61,7 @@ Note: "↑" and "+" denote the accuracy improvements and the extra GPU-Hours res
 Note: GPU-Hours are calculated based on two NVIDIA RTX-4090 GPUs, i.e., 1734/360 * 2 = 0.96.
 
 
-### Pre-trained Language Models size
+### Small Language Models size <sup>[1]</sup>
 
 | Model                     | #Params (M) |
 |----------------------------|--------------------|
@@ -71,7 +71,7 @@ Note: GPU-Hours are calculated based on two NVIDIA RTX-4090 GPUs, i.e., 1734/360
 - Base models:12 layers,768 hidden size,12 heads
 - M denotes for millions parameters
 ### Reference
-He, P., Gao, J., | Chen, W. DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing. In The Eleventh International Conference on Learning Representations. 2023
+[1] He, P., Gao, J., | Chen, W. DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing. In The Eleventh International Conference on Learning Representations. 2023
 
 
 
