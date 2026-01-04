@@ -1,5 +1,5 @@
 # TopK+L2D
-This code is for the paper ``Learn to Select: Exploring Label Distribution Divergence for Demonstration Selection in In-Context Classification``.
+This code is for the paper ``Efficient Demonstration Selection by Label-Alignment Divergence Reranking for In-Context Learning.
 
 # Installation
 
