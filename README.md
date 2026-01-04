@@ -1,5 +1,5 @@
 # Label-Alignment Divergence Reranking (LADR)
-This code is for the paper ``Efficient Demonstration Selection by Label-Alignment Divergence Reranking for In-Context Learning.
+This code is for the paper ``Efficient Demonstration Selection by Label-Alignment Divergence Reranking for In-Context Learning``.
 
 # Installation
 
