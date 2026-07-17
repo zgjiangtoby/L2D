@@ -1,5 +1,5 @@
 # Label-Alignment Divergence Reranking (LADR)
-This code is for the paper ``Label-Alignment Divergence Reranking for In-Context Text Classification``.
+This code is for the paper ``Do Label Distributions Improve Demonstration Selection? Reranking In-Context Examples by Output-Space Compatibility``.
 
 # Installation
 
